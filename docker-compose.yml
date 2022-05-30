@@ -1,0 +1,13 @@
+version: '3.7'
+services:
+  postgresql:
+    image: postgres
+    ports:
+      - '3306:3306'
+    volumes:
+      - ./data:/var/lib/postgresql
+    environment:
+      - POSTGRESQL_RANDOM_ROOT_PASSWORD=yes
+      - POSTGRESQL_DATABASE=app
+      - POSTGRESQL_USER=app
+      - POSTGRESQL_PASSWORD=9mREsvXDs9Gk89Ef
